@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './title.css';
 
-export default function Title() {
-    const [month, setMonth] = useState("");
-    const [pastorName, setPastorName] = useState("");
-    const [churchLocation, setChurchLocation] = useState("");
+export default function Title(props) {
 
+    const { month, setMonth,
+        pastorName, setPastorName,
+        churchLocation, setChurchLocation } = props;
     return (
         <>
             <div className="title-container">

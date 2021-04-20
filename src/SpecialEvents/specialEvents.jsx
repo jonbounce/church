@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 
-export default function SpecialEvents() {
-    const [description, setDescription] = useState("");
-    const [date, setDate] = useState("");
-    const [action, setAction] = useState("");
-    const [remarks, setRemarks] = useState("");
+export default function SpecialEvents(props) {
+
+    const {
+        description, setDescription,
+        date, setDate,
+        action, setAction,
+        remarks, setRemarks
+    } = props
 
     return (
         <>
