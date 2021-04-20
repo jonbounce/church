@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-export default function ChallengeEncounter() {
-    const [details, setDetails] = useState("");
-    const [actionTaken, setActionTaken] = useState("");
-    const [recommended, setRecommended] = useState("");
+export default function ChallengeEncounter(props) {
 
+    const { details, setDetails,
+        actionTaken, setActionTaken,
+        recommended, setRecommended } = props;
 
     return (
         <>
-            <table className="full-width-table" style={{ width: '100%',marginTop:'2%' }}>
+            <table className="full-width-table" style={{ width: '100%', marginTop: '2%' }}>
                 <thead>
                     <tr>
                         <th>DETAILS</th>

@@ -2,22 +2,20 @@ import React, { useState } from 'react';
 import { Table } from 'react-bootstrap';
 import './WeeklyMeeting.css';
 
-export default function WeeklyMeeting() {
-    const [week, setWeek] = useState("");
-    const [memberSws, setMemberSws] = useState("");
-    const [memberBS, setMemberBs] = useState("");
-    const [memberRETS, setMemberRETS] = useState("");
-    const [memberRemarks, setMemberRemarks] = useState("");
+export default function WeeklyMeeting(props) {
 
-    const [visitorSws, setVisitorSws] = useState("");
-    const [visitorBS, setVisitorBs] = useState("");
-    const [visitorRETS, setVisitorRETS] = useState("");
-    const [visitorRemarks, setVisitorRemarks] = useState("");
+    const { week, setWeek,
+        memberSws, setMemberSws,
+        memberBS, setMemberBs,
+        memberRETS, setMemberRETS,
+        memberRemarks, setMemberRemarks,
 
-    // const [totalSws, setTotalSws] = useState("");
-    // const [totalBS, setTotalBs] = useState("");
-    // const [totalRETS, setTotalRETS] = useState("");
-    const [totalRemarks, setTotalRemarks] = useState("");
+        visitorSws, setVisitorSws,
+        visitorBS, setVisitorBs,
+        visitorRETS, setVisitorRETS,
+        visitorRemarks, setVisitorRemarks,
+
+        totalRemarks, setTotalRemarks } = props;
 
     return (
         <>
