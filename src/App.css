@@ -77,16 +77,10 @@
 .submit-button {
   padding: 1%;
   background: dodgerblue;
-  border: none;
+  border:none;
   color: white;
   width: 25%;
   float: right;
   font-weight: bold;
   margin: 1%;
-  cursor: pointer;
-}
-
-.disable-button {
-  opacity: 0.7;
-  cursor: not-allowed;
 }

@@ -45,13 +45,14 @@ export default function Main() {
     const [month, setMonth] = useState("");
     const [pastorName, setPastorName] = useState("");
     const [churchLocation, setChurchLocation] = useState("");
+    const [State, setState] = useState("");
 
     // Challenge encounter
     const [details, setDetails] = useState("");
     const [actionTaken, setActionTaken] = useState("");
     const [recommended, setRecommended] = useState("");
 
-    // Outreach 
+    // Outreach
     const [outreach, setOutReach] = useState('');
 
     // Visitation
@@ -63,7 +64,7 @@ export default function Main() {
     // Other remarks
     const [otherRemarks, setOtherRemarks] = useState('');
 
-    // Submit 
+    // Submit
     const [isSubmitting, setSubmit] = useState(false);
 
     const clearAll = () => {
@@ -91,6 +92,7 @@ export default function Main() {
         setVisitation('')
         setTestimony('')
         setOtherRemarks('')
+        setState('')
     }
     const onSubmit = () => {
         setSubmit(true);
@@ -122,6 +124,7 @@ export default function Main() {
                 setPastorName={setPastorName}
                 churchLocation={churchLocation}
                 setChurchLocation={setChurchLocation}
+                setState={setState}
             />
             <Headerbar label="Weekly Meeting Attendance" />
             <WeeklyMeeting
